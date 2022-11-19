@@ -1,0 +1,28 @@
+# Don't lint config files in the root ending .js
+node_modules/*
+docker/*
+.github/*
+.husky/*
+.vscode/*
+.nuxt/*
+
+
+# Don't lint config files in the root ending .js
+/.eslintignore
+/.gitintignore
+/.prettierintignore
+/.hintrc
+/*.ts
+/*.js
+/*.json
+/*.yml
+/*.yaml
+/*.md
+/*.lock
+/*.log
+
+# This files are to big to lint
+*.sass
+*.scss
+*.svg
+
