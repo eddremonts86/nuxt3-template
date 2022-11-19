@@ -12,14 +12,12 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:vue/recommended',
-    '@nuxtjs',
     'plugin:nuxt/recommended',
-    'plugin:vue-pug/vue3-recommended'
-  ],
+    '@nuxtjs',
+   ],
   plugins: [
     'vue'
   ],
-  // add your custom rules here
   rules: {
     "no-console": "off",
     "space-before-function-paren": ["error", "always"],
@@ -78,4 +76,4 @@ module.exports = {
       },
     ],
   },
-}
+};
