@@ -14,7 +14,7 @@ module.exports = {
     'plugin:vue/recommended',
     'plugin:nuxt/recommended',
     '@nuxtjs',
-   ],
+  ],
   plugins: [
     'vue'
   ],
@@ -29,7 +29,10 @@ module.exports = {
     "object-shorthand": "error",
     "quote-props": "error",
     "no-array-constructor": "error",
-    "prefer-destructuring": ["error", { object: true, array: false }],
+    "prefer-destructuring": [
+      "error",
+      { object: true, array: false }
+    ],
     "prefer-template": "error",
     "template-curly-spacing": "error",
     "default-param-last": "error",
@@ -41,29 +44,22 @@ module.exports = {
     "arrow-parens": "error",
     "nonblock-statement-body-position": "error",
     "brace-style": "error",
+    "semicolon": [0, "never"],
     'no-restricted-syntax': [
       'error',
       {
         message: "Please don't use '.at', browser compatibility is not good",
-        selector:
-          'MemberExpression > Identifier[name="at"]'
+        selector: 'MemberExpression > Identifier[name="at"]'
       }
     ],
-    "vue/new-line-between-multi-line-property": [
-      "error",
-      {
-        minLineOfMultilineProperty: 2,
-      },
-    ],
     "vue/brace-style": "error",
-    "vue/custom-event-name-casing": "error",
     "vue/max-len": [
       "error",
       {
-        tabWidth: 2,
-        code: 80,
-        template: 80,
-        comments: 80,
+        tabWidth: 4,
+        code: 140,
+        template: 140,
+        comments: 140,
         ignoreUrls: true,
         ignoreStrings: true,
         ignoreRegExpLiterals: true,
